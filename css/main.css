@@ -172,7 +172,7 @@ header{
   width: 80%;
   display: flex;
   justify-content: space-between;
-  align-items: top;
+  align-items: flex-start;
   margin: 0 auto;
 }
 
@@ -195,6 +195,26 @@ header{
 .Leadership_Section{
   background-color: #FBFFFE;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sectionbox_leadership h2{
+  text-shadow: 2px 2px #dadada;
+}
+
+.asterik_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.title{
+  font-weight: 700
 }
 
 /* End Leadership_Section */
@@ -204,6 +224,10 @@ header{
 .Info_Section{
   background-color: #FCFFF5;
   padding: 10px;
+}
+
+.buffer{
+  margin: 2rem;
 }
 
 /* End Info_Section */
@@ -229,7 +253,33 @@ footer p{
 
 /* End footer */
 
+/*  */
+@media screen and (max-width: 786px) {
 
+  .sectionbox{
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buffer p{
+    text-align: center;
+  }
+
+  .buffer h2{
+    text-align: center;
+  }
+
+  .mobile_nav_icon{
+    display: block;
+  }
+
+nav{
+  display: none;
+}
+
+}
 
 /* ==========================================================================
    Helper classes
