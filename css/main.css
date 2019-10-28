@@ -15,7 +15,6 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  font-family: 'Montserrat', sans-serif;
 }
 
 /*
@@ -98,188 +97,149 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* Begin Header Styles */
+body{
+  font-family: 'Poppins', sans-serif;
+  /*font-family: 'Caveat', cursive;*/
+}
 
 header{
-  background-color: #93DFCB;
-  min-height: 100px;
+  background-color: #065f61;
+  min-height: 65px;
   display: flex;
   align-items: center;
   margin: 0 auto;
+  width: 100%;
 }
 
 .navbar{
-  width: 80%;
+  width: 95%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   margin: 0 auto;
 }
-
-.navbar a{
-  color: #000;
-  font-family: 'Montserrat', sans-serif;;
-  margin-left: 6px;
-  text-decoration: none;
-}
-
-.navbar a:hover{
-  color: #fff;
-}
-
-.mobile_nav_icon{
-  display: none;
-}
-
-/* End Header Styles */
-
-/* Begin Hero Section */
 
 .Hero{
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  background-image: url('../img/MyBackgroundImage.jpg');
-  background-position: center;
+  width: 100%;
+  background-image: url(../img/hero_img.jpg);
+  height: 380px;
+  background-attachment: fixed;
+  background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
-  overflow: none;
+  background-size: contain;
 }
 
-.hero_cta{
-  text-align: center;
-}
-
-.hero_cta h1{
-  font-size: 50px;
-  color: #fff;
-  font-weight: 400;
-}
-
-/* End Hero Section */
-
-
-/* Begin CTA_Section */
-
-.CTA_Section{
-  background-color: #EEF5EA;
-  padding: 10px;
-}
-
-.sectionbox{
-  width: 80%;
+.hero_title{
+  width: 90%;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin: 0 auto;
+  justify-content: flex-start;
+  align-items: baseline;
+  padding-top: 210px;
 }
 
-#CTA1,
-#CTA2,
-#CTA3{
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 10px;
+  h2{
+    font-weight: 600;
+    font-size: 70px;
+    padding-left: 2%;
+  }
+
+  h1{
+    font-weight: 800;
+    font-size: 70px;
+    padding-left: 1%;
+  }
+
+.AboutUs{
+  background-color: #CA887A;
+  padding: 25px;
 }
 
-/* End CTA_Section */
+    h3{
+      font-weight: 600;
+      color: #fff;
+      font-size: 50px;
+      padding-left: 1%;
+    }
 
-/* Begin Leadership_Section */
-
-.Leadership_Section{
-  background-color: #FBFFFE;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.sectionbox_leadership h2{
-  text-shadow: 2px 2px #dadada;
-}
-
-.asterik_img{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-}
-
-.title{
-  font-weight: 700
-}
-
-/* End Leadership_Section */
-
-/* Begin Info_Section */
-
-.Info_Section{
-  background-color: #FCFFF5;
-  padding: 10px;
-}
-
-.buffer{
-  margin: 2rem;
-}
-
-/* End Info_Section */
-
-/* Begin footer */
-
-
-footer{
-  background-color: #93DFCB;
-  min-height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
-
-footer p{
-  color: #fff;
-  font-size: 26px;
-  font-weight: 300;
-}
-
-
-/* End footer */
-
-/*  */
-@media screen and (max-width: 786px) {
-
-  .sectionbox{
-    width: 90%;
-    flex-direction: column;
+  .sectionbox_images{
+    width: 70%;
+    display: grid;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
   }
 
-  .buffer p{
+  .imagebox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    flex-wrap: wrap;
+  }
+
+      h4{
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-weight: normal;
+        text-align: center;
+      }
+
+  .sectionbox_text{
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: left;
+    padding-bottom: 10%;
+  }
+
+.sectionbox_verse{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: italic;
   }
 
-  .buffer h2{
-    text-align: center;
+.FindUs_hero{
+    width: 100%;
+    background-image: url(../img/findus_img.jpg);
+    height: 645px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
-  .mobile_nav_icon{
-    display: block;
+  .findus_title{
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 2%;
+    padding-left: 2%;
   }
 
-nav{
-  display: none;
+
+  .FindUs{
+    background-color: #B0C7CA;
+  }
+
+.findus_text{
+padding: inherit;
 }
 
-}
+
+
+/* font-family: 'Poppins', sans-serif; */
+
 
 /* ==========================================================================
    Helper classes
